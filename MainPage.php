@@ -70,9 +70,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 <div id="title">
-<h1>Jobby: Organizing your job search since 2019!</h1>
+<h1>[Logo will go here]</h1>
 </div>
 <div id="navbar">
+	<h2>Jobby: Organizing your job search since 2019!</h2>
 	<ul class="tabs">
 		<li class="tab" id="about">About
 			<ul class="dropdown">
