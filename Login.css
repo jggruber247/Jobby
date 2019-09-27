@@ -1,5 +1,47 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'Login.php'*/
 body{
-
+	text-align: center;
+}
+h1{
+	 margin-top: 20px;
+	 font-family: Helvetica;
+	 font-size: 175%;
+}
+h2{
+	 font-size: 150%;
+	 color: red;
+	 font-family: Trebuchet;
+}
+h3{
+	font-family: Helvetica;
+	font-size: 150%;
+}
+input{
+	 padding: 7px 70px;
+	 font-size: 120%;
+}
+input#sub{
+	 padding: 7px 160px;
+	 border-radius: 25px;
+	 background: #A9D0F5;
+}
+input#sub:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input#return{
+	 padding: 7px 100px;
+	 margin-top: 20px;
+	 border-radius: 25px;
+	 background: #A9D0F5;
+ }
+input#return:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+div#rectangle{
+	margin-top: 60px;
+    width:400px;
+    background:#E0ECF8;
+	display: inline-block;
+	border-style: solid;
 }
