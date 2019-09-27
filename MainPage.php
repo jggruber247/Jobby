@@ -67,8 +67,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		<input name="logout" id="logout" type="submit" value="Logout" />
 	</form>
 </div>
-<h1>Jobby: Organizing your job search since 2019!</h1>
 
+
+<div id="title">
+<h1>Jobby: Organizing your job search since 2019!</h1>
+</div>
+<div id="navbar">
+	<ul class="tabs">
+		<li class="tab" id="about">About
+			<ul class="dropdown">
+				<li class="item">What is Jobby?</li>
+				<li class="item">How does it work?</li>
+				<li class="item">FAQ</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="yourjobs">Your Jobs
+			<ul class="dropdown">
+				<li class="item">New Application</li>
+				<li class="item">Application History</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="calender">Calender
+			<ul class="dropdown">
+				<li class="item">View Calender</li>
+				<li class="item">Import Calender</li>
+				<li class="item">Export Calender</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="support">Support
+			<ul class="dropdown">
+				<li class="item">Forum</li>
+				<li class="item">Privacy Policy</li>
+				<li class="item">Contact Us</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="youraccount">Your Account
+			<ul class="dropdown">
+				<li class="item">Edit Profile</li>
+				<li class="item">Link Accounts</li>
+				<li class="item">Preferences</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 <?php
 $conn->close();
 //ends the connection

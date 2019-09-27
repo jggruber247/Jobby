@@ -1,7 +1,12 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'MainPage.php'*/
-body{
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
 	text-align: center;
+	background-color: grey;
 }
 p {
 	width: 65%;
@@ -14,11 +19,16 @@ p#welcome {
 	display: none;
 	margin: 10px auto 0px auto;
 }
+p#prompt {
+	width: 175px;
+	display: block;
+	margin: 10px auto 0px auto;
+}
 input {
 	display: block;
 	padding: 7px 50px;
 	border-radius: 25px;
-	background: #A9D0F5;
+	background: #34CC99;
 	float: left;
 	margin-left: 15px;
 	margin-right: 15px;
@@ -34,9 +44,6 @@ input#login {
 input#logout {
 	display: none;
 }
-input#prompt {
-	display: block;
-}
 input.hidden {
 	display: none;
 }
@@ -48,4 +55,118 @@ input.hidden {
 	border-style: solid;
 	padding-bottom: 10px;
 	margin-top: 10px;
+	margin-left: 12%;
+}
+div#title {
+	background-color: #A9D0F5;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div#navbar {
+	height: 50px;
+	background-color: #A9D0F5;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+div#navbar:hover {
+	border-bottom: 5px solid #34CC99;
+}
+ul {
+	list-style: none;
+}
+ul.tabs {
+	font-size: 110%;
+	margin-top: 0px;
+	margin-left: 40%;
+	text-align: center;
+}
+ul ul {
+	display: none;
+}
+ul li:hover > ul {
+	display: block;
+}
+ul li.tab {
+	float: left;
+	color: black;
+	margin-top: 5px;
+	padding-top: 5px;
+	margin-right: 50px;
+	border-radius: 20px;
+}
+ul li.tab:hover {
+	background-color: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+ul li.item {
+	font-size: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px black;
+	background-color: #34CC99;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ul li.bott {
+	font-size: 100%;
+	text-align: center;
+	color: #3D619C;
+	background-color: #3D619C;
+	text-shadow: 1px 1px #3D619C;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 40px;
+}
+li.item:hover {
+	background-color: #019966;
+}
+ul.dropdown { 
+	margin-top: 10px;
+	padding-top: 15px;
+	border-radius: 20px;
+}
+#about {
+	z-index: 10;
+	width: 175px;
+}
+#about ul.dropdown {
+	z-index: 9;
+	width: 175px;
+}
+#yourjobs {
+	z-index: 8;
+	width: 175px;
+}
+#yourjobs ul.dropdown {
+	z-index: 7;
+	width: 175px;
+}
+#calender {
+	z-index: 6;
+	width: 175px;
+}
+#calender ul.dropdown {
+	z-index: 5;
+	width: 175px;
+}
+#support {
+	z-index: 4;
+	width: 175px;
+}
+#support ul.dropdown {
+	z-index: 3;
+	width: 175px;
+}
+#youraccount {
+	z-index: 2;
+	width: 175px;
+}
+#youraccount ul.dropdown {
+	z-index: 1;
+	width: 175px;
 }
