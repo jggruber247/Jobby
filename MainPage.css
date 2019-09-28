@@ -68,7 +68,12 @@ input.hidden {
 	margin-top: 10px;
 	margin-left: 12%;
 }
+.pagebody {
+	z-index: 0;
+}
+
 div#title {
+	position: fixed;
 	background-color: #A9D0F5;
 	width: 80%;
 	margin-left: 10%;
@@ -77,6 +82,7 @@ div#title {
 	padding-bottom: 10px;
 }
 div#navbar {
+	position: fixed;
 	height: 45px;
 	background-color: #A9D0F5;
 	width: 80%;
@@ -180,4 +186,7 @@ ul.dropdown {
 #youraccount ul.dropdown {
 	z-index: 1;
 	width: 175px;
+}
+a {
+	text-decoration: none;
 }

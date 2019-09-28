@@ -22,8 +22,7 @@ if ($conn->connect_error) {
 ?>
 <script>
 var logged = false;
-
-
+// function for the login/logout box
 function isLoggedIn(status) {
 	if (status == "true") {
 		document.getElementById('login').style.display='none';
@@ -75,11 +74,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <div id="navbar">
 	<h2>Jobby: Organizing your job search since 2019!</h2>
 	<ul class="tabs">
-		<li class="tab" id="about">About
+		<a href="MainPage.php"><li class="tab" id="about">About </a>
 			<ul class="dropdown">
-				<li class="item">What is Jobby?</li>
-				<li class="item">How does it work?</li>
-				<li class="item">FAQ</li>
+				<a href="MainPage.php#A1"><li class="item">What is Jobby?</li></a>
+				<a href="MainPage.php#A2"><li class="item">How does it work?</li></a>
+				<a href="MainPage.php#A3"><li class="item">FAQ</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
@@ -116,10 +115,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		</li>
 	</ul>
 </div>
+<!-- END NAVBAR FORMATTING -->
+<div class="pagebody">
+<h3 id="A1">What is Jobby?</h3>
+<br>
+<h3 id="A2">How does it work?</h3>
+<br>
+<h3 id="A3">Frequently Asked Questions</h3>
+<br>
+</div>
+</body>
 <?php
 $conn->close();
 //ends the connection
 	echo "<br>";
 ?>
-</body>
 </html>
