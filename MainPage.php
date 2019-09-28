@@ -22,13 +22,18 @@ if ($conn->connect_error) {
 ?>
 <script>
 var logged = false;
-// function for the login/logout box
+// function for the login/logout box 
+	// Certain elements are shown or hidden based on whether or not the user is logged in
 function isLoggedIn(status) {
 	if (status == "true") {
 		document.getElementById('login').style.display='none';
 		document.getElementById('logout').style.display='block';
 		document.getElementById('welcome').style.display='block';
 		document.getElementById('prompt').style.display='none';
+		document.getElementById('yourjobs').style.display='block';
+		document.getElementById('calender').style.display='block';
+		document.getElementById('youraccount').style.display='block';
+		document.getElementById('signup').style.display='none';
 		logged = true;
 	}
 }
@@ -66,34 +71,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		<input name="logout" id="logout" type="submit" value="Logout" />
 	</form>
 </div>
-
-
-<div id="title">
-<h1>[Logo will go here]</h1>
-</div>
 <div id="navbar">
-	<h2>Jobby: Organizing your job search since 2019!</h2>
+	<div id="title">
+		<h1>Jobby<span>.com</span></h1>
+	</div>
+	<a href="MainPage.php" title="Return to Home Page"><h2><b>Jobby:</b> Organizing your job search since 2019!</h2></a>
 	<ul class="tabs">
-		<a href="MainPage.php"><li class="tab" id="about">About </a>
+		<li class="tab" id="signup">Sign Up Today!
 			<ul class="dropdown">
-				<a href="MainPage.php#A1"><li class="item">What is Jobby?</li></a>
-				<a href="MainPage.php#A2"><li class="item">How does it work?</li></a>
-				<a href="MainPage.php#A3"><li class="item">FAQ</li></a>
+				<li class="item">Create Account</li>
+				<li class="item">Learn More</li>
 				<li class="bott">.</li>
 			</ul>
 		</li>
-		<li class="tab" id="yourjobs">Your Jobs
+		<li class="tab" id="youraccount">Your Account
 			<ul class="dropdown">
-				<li class="item">New Application</li>
-				<li class="item">Application History</li>
-				<li class="bott">.</li>
-			</ul>
-		</li>
-		<li class="tab" id="calender">Calender
-			<ul class="dropdown">
-				<li class="item">View Calender</li>
-				<li class="item">Import Calender</li>
-				<li class="item">Export Calender</li>
+				<li class="item">Edit Profile</li>
+				<li class="item">Link Accounts</li>
+				<li class="item">Preferences</li>
 				<li class="bott">.</li>
 			</ul>
 		</li>
@@ -105,11 +100,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 				<li class="bott">.</li>
 			</ul>
 		</li>
-		<li class="tab" id="youraccount">Your Account
+		<li class="tab" id="calender">Calender
 			<ul class="dropdown">
-				<li class="item">Edit Profile</li>
-				<li class="item">Link Accounts</li>
-				<li class="item">Preferences</li>
+				<li class="item">View Calender</li>
+				<li class="item">Import Calender</li>
+				<li class="item">Export Calender</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="yourjobs">Your Jobs
+			<ul class="dropdown">
+				<li class="item">New Application</li>
+				<li class="item">Application History</li>
+				<li class="bott">.</li>
+			</ul>
+		</li>
+		<li class="tab" id="about">About 
+			<ul class="dropdown">
+				<a href="MainPage.php#A1"><li class="item">What is Jobby?</li></a>
+				<a href="MainPage.php#A2"><li class="item">How does it work?</li></a>
+				<a href="MainPage.php#A3"><li class="item">FAQ</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>

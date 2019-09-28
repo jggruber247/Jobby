@@ -1,8 +1,12 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'MainPage.php'*/
 * {
+	text-decoration: none;
 	padding: 0;
 	margin: 0;
+}
+a {
+	text-decoration: none;
 }
 body {
 	text-align: center;
@@ -25,15 +29,23 @@ p#prompt {
 	margin: 10px auto 0px auto;
 }
 h1{
-	
+	font-family: Stencil;
+	font-weight: normal;
+	font-size: 42px;
+	letter-spacing: 1px;
 }
 h2 {
+	position: fixed;
 	font-weight: bold;
 	font-size: 115%;
+	color: black;
 	margin-left: 16%;
 	float: left;
 	margin-top: 5px;
 	padding-top: 10px;
+}
+span {
+	font-size: 75%;
 }
 input {
 	display: block;
@@ -47,6 +59,9 @@ input {
 	width: 150px;
 }
 input:hover {
+	background: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 input#login {
@@ -67,38 +82,52 @@ input.hidden {
 	padding-bottom: 10px;
 	margin-top: 10px;
 	margin-left: 12%;
+	z-index: 11;
+}
+.topper:hover {
+	border: 5px solid #3D619C;
 }
 .pagebody {
+	background-color: #A9D0F5;
+	margin-top: 110px;
+	padding-top: 50px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 	z-index: 0;
+	border: 5px solid #34CC99;
 }
-
+.pagebody:hover {
+	border: 5px solid #019966;
+}
 div#title {
-	position: fixed;
 	background-color: #A9D0F5;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
 }
 div#navbar {
+	top: 0;
 	position: fixed;
-	height: 45px;
+	height: 100px;
 	background-color: #A9D0F5;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+	border: 5px solid #34CC99;
 }
 div#navbar:hover {
-	border-bottom: 5px solid #34CC99;
+	border: 5px solid #3D619C;
 }
 ul {
 	list-style: none;
+	text-decoration: none;
 }
 ul.tabs {
 	font-size: 110%;
 	margin-top: 0px;
-	margin-left: 40%;
+	margin-right: 5%;
 	text-align: center;
 }
 ul ul {
@@ -108,7 +137,7 @@ ul li:hover > ul {
 	display: block;
 }
 ul li.tab {
-	float: left;
+	float: right;
 	color: black;
 	margin-top: 5px;
 	padding-top: 10px;
@@ -158,6 +187,7 @@ ul.dropdown {
 #yourjobs {
 	z-index: 8;
 	width: 175px;
+	display: none;
 }
 #yourjobs ul.dropdown {
 	z-index: 7;
@@ -166,6 +196,7 @@ ul.dropdown {
 #calender {
 	z-index: 6;
 	width: 175px;
+	display: none;
 }
 #calender ul.dropdown {
 	z-index: 5;
@@ -182,11 +213,18 @@ ul.dropdown {
 #youraccount {
 	z-index: 2;
 	width: 175px;
+	display: none;
 }
 #youraccount ul.dropdown {
 	z-index: 1;
 	width: 175px;
 }
-a {
-	text-decoration: none;
+#signup {
+	z-index: 2;
+	width: 175px;
+	display: block;
+}
+#signup ul.dropdown {
+	z-index: 1;
+	width: 175px;
 }
