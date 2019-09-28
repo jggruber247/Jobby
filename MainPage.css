@@ -1,5 +1,8 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'MainPage.php'*/
+html{
+	min-width: 1000px;
+}
 * {
 	text-decoration: none;
 	padding: 0;
@@ -7,6 +10,9 @@ This is the styling sheet for 'MainPage.php'*/
 }
 a {
 	text-decoration: none;
+}
+a:-webkit-any-link {
+	color: #3D619C;
 }
 body {
 	text-align: center;
@@ -33,16 +39,18 @@ h1{
 	font-weight: normal;
 	font-size: 42px;
 	letter-spacing: 1px;
+	color: #3D619C;
+	text-shadow: 2px 2px #34CC99;
 }
 h2 {
-	position: fixed;
 	font-weight: bold;
 	font-size: 115%;
+	font-style: italic;
 	color: black;
-	margin-left: 16%;
-	float: left;
-	margin-top: 5px;
-	padding-top: 10px;
+}
+h3 {
+	padding-top: 145px;
+	font-size: 150%;
 }
 span {
 	font-size: 75%;
@@ -80,45 +88,46 @@ input.hidden {
 	background:#E0ECF8;
 	border: 5px solid #34CC99;
 	padding-bottom: 10px;
-	margin-top: 10px;
-	margin-left: 12%;
+	margin-top: 30px;
+	margin-left: 5%;
 	z-index: 11;
 }
 .topper:hover {
 	border: 5px solid #3D619C;
 }
 .pagebody {
-	background-color: #A9D0F5;
-	margin-top: 110px;
-	padding-top: 50px;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	background-color: white;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
 	z-index: 0;
-	border: 5px solid #34CC99;
-}
-.pagebody:hover {
-	border: 5px solid #019966;
 }
 div#title {
 	background-color: #A9D0F5;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border-bottom: 5px solid #3D619C;
 }
 div#navbar {
 	top: 0;
+	left: 0;
 	position: fixed;
-	height: 100px;
-	background-color: #A9D0F5;
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	border: 5px solid #34CC99;
+	max-height: 160px;
+	height: 131px;
+	background-color: #34CC99;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 5px solid #3D619C;
 }
-div#navbar:hover {
-	border: 5px solid #3D619C;
+div#navbar:hover > ul li.tab {
+	background-color: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
 }
 ul {
 	list-style: none;
@@ -127,8 +136,9 @@ ul {
 ul.tabs {
 	font-size: 110%;
 	margin-top: 0px;
-	margin-right: 5%;
+	/* margin-right: 5%; */
 	text-align: center;
+	background-color: #34CC99;
 }
 ul ul {
 	display: none;
@@ -139,8 +149,9 @@ ul li:hover > ul {
 ul li.tab {
 	float: right;
 	color: black;
-	margin-top: 5px;
+	margin-top: 3px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-right: 5px;
 	border-radius: 20px;
 }
@@ -165,7 +176,7 @@ ul li.bott {
 	background-color: #3D619C;
 	text-shadow: 1px 1px #3D619C;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-radius: 40px;
 }
 li.item:hover {
@@ -177,54 +188,120 @@ ul.dropdown {
 	border-radius: 20px;
 }
 #about {
-	z-index: 10;
+	z-index: 1;
 	width: 175px;
 }
 #about ul.dropdown {
-	z-index: 9;
+	z-index: 2;
 	width: 175px;
 }
 #yourjobs {
-	z-index: 8;
+	z-index: 3;
 	width: 175px;
 	display: none;
 }
 #yourjobs ul.dropdown {
-	z-index: 7;
+	z-index: 4;
 	width: 175px;
 }
 #calender {
-	z-index: 6;
+	z-index: 5;
 	width: 175px;
 	display: none;
 }
 #calender ul.dropdown {
-	z-index: 5;
+	z-index: 6;
 	width: 175px;
 }
 #support {
-	z-index: 4;
+	z-index: 7;
 	width: 175px;
 }
 #support ul.dropdown {
-	z-index: 3;
+	z-index: 8;
 	width: 175px;
 }
 #youraccount {
-	z-index: 2;
+	z-index: 9;
 	width: 175px;
 	display: none;
 }
 #youraccount ul.dropdown {
-	z-index: 1;
+	z-index: 10;
 	width: 175px;
 }
 #signup {
-	z-index: 2;
+	z-index: 9;
 	width: 175px;
 	display: block;
 }
 #signup ul.dropdown {
-	z-index: 1;
+	z-index: 10;
 	width: 175px;
+}
+p#space {
+	margin-top: 400px;
+	margin-bottom: 400px;
+	padding: 100px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 1250px) {
+	ul ul {
+		list-style: none;
+	}
+	#about {
+		position: fixed;
+		top: 5px;
+		right: 10px;
+		z-index: 10;
+	}
+	#about ul.dropdown {
+		z-index: 9;
+	}
+	#yourjobs {
+		position: fixed;
+		top: 5px;
+		right: 190px;
+		z-index: 10;
+	}
+	#yourjobs ul.dropdown {
+		z-index: 9;
+	}
+	#calender {
+		position: fixed;
+		top: 40px;
+		right: 190px;
+		z-index: 8;
+	}
+	#calender ul.dropdown {
+		z-index: 7;
+	}
+	#support {
+		position: fixed;
+		top: 40px;
+		right: 10px;
+		z-index: 8;
+	}
+	#support ul.dropdown {
+		z-index: 7;
+	}
+	#youraccount {
+		position: fixed;
+		top: 75px;
+		right: 10px;
+		z-index: 6;
+	}
+	#youraccount ul.dropdown {
+		z-index: 5;
+	}
+	#signup {
+		position: fixed;
+		top: 75px;
+		right: 10px;
+		z-index: 6;
+	}
+	#signup ul.dropdown {
+		z-index: 5;
+	}
 }

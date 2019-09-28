@@ -73,9 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 </div>
 <div id="navbar">
 	<div id="title">
-		<h1>Jobby<span>.com</span></h1>
+		<h1><a href="MainPage.php" title="Return to Home Page">Jobby<span>.com</span></a></h1>
+		<h2>Organizing your job search since 2019!</h2>
 	</div>
-	<a href="MainPage.php" title="Return to Home Page"><h2><b>Jobby:</b> Organizing your job search since 2019!</h2></a>
 	<ul class="tabs">
 		<li class="tab" id="signup">Sign Up Today!
 			<ul class="dropdown">
@@ -128,11 +128,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <!-- END NAVBAR FORMATTING -->
 <div class="pagebody">
 <h3 id="A1">What is Jobby?</h3>
-<br>
+<p id="space">[empty]</p>
 <h3 id="A2">How does it work?</h3>
-<br>
+<p id="space">[empty]</p>
 <h3 id="A3">Frequently Asked Questions</h3>
-<br>
+<p id="space">[empty]</p>
 </div>
 </body>
 <?php
