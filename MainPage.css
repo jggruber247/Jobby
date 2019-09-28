@@ -29,8 +29,8 @@ h1{
 }
 h2 {
 	font-weight: bold;
-	font-size: 120%;
-	margin-left: 15%;
+	font-size: 115%;
+	margin-left: 16%;
 	float: left;
 	margin-top: 5px;
 	padding-top: 10px;
@@ -106,7 +106,7 @@ ul li.tab {
 	color: black;
 	margin-top: 5px;
 	padding-top: 10px;
-	margin-right: 50px;
+	margin-right: 5px;
 	border-radius: 20px;
 }
 ul li.tab:hover {
