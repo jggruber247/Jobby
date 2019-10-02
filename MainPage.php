@@ -133,12 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <!-- END NAVBAR FORMATTING -->
 <div class="pagebody">
-<h3 id="A1">What is Jobby?</h3>
-<p id="space">[empty]</p>
-<h3 id="A2">How does it work?</h3>
-<p id="space">[empty]</p>
-<h3 id="A3">Frequently Asked Questions</h3>
-<p id="space">[empty]</p>
+
 </div>
 
 </body>
