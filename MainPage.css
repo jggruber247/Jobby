@@ -1,7 +1,7 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'MainPage.php'*/
 html{
-	min-width: 1000px;
+	min-width: 1300px;
 }
 * {
 	text-decoration: none;
@@ -102,6 +102,7 @@ input.hidden {
 	margin-right: 0;
 	z-index: 0;
 }
+
 div#title {
 	background-color: #A9D0F5;
 	width: 100%;
@@ -145,6 +146,7 @@ ul ul {
 }
 ul li:hover > ul {
 	display: block;
+	
 }
 ul li.tab {
 	float: right;
