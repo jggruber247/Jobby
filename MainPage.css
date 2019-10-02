@@ -188,8 +188,10 @@ ul.dropdown {
 	border-radius: 20px;
 }
 
-#home{
+#home{ /*ACTIVE*/
 	width: 75px;
+	background-color: #019966;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.24), 0 0 0 4px rgba(0,0,0,0.24);
 }
 #about {
 	z-index: 1;

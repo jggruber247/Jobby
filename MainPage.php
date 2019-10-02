@@ -84,23 +84,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		<li class="tab" id="signup">Sign Up Today!
 			<ul class="dropdown">
 				<a href="Login.php#F1"><li class="item">Create Account</li></a>
-				<a href="Login.php#F1"><li class="item">Learn More</li></a>
+				<a href="Login.php#F2"><li class="item">Learn More</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
 		<li class="tab" id="youraccount">Your Account
 			<ul class="dropdown">
-				<li class="item">Edit Profile</li>
-				<li class="item">Link Accounts</li>
-				<li class="item">Preferences</li>
+				<a href="Account.php#E1"><li class="item">Edit Profile</li></a>
+				<a href="Account.php#E2"><li class="item">Link Accounts</li></a>
+				<a href="Account.php#E3"><li class="item">Preferences</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
 		<li class="tab" id="support">Support
 			<ul class="dropdown">
-				<li class="item">Forum</li>
-				<li class="item">Privacy Policy</li>
-				<li class="item">Contact Us</li>
+				<a href="Support.php#D1"><li class="item">Forum</li></a>
+				<a href="Support.php#D2"><li class="item">Privacy Policy</li></a>
+				<a href="Support.php#D3"><li class="item">Contact Us</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
