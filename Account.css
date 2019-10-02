@@ -1,0 +1,254 @@
+/* AUTHOR: James Garrett Gruber 
+This is the styling sheet for 'Account.php'*/
+html{
+	min-width: 1000px;
+}
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:-webkit-any-link {
+	color: #3D619C;
+}
+body {
+	text-align: center;
+	background-color: #c4c7cc;
+}
+p {
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 130%;
+}
+p#welcome {
+	width: 175px;
+	display: none;
+	margin: 10px auto 0px auto;
+}
+p#prompt {
+	width: 175px;
+	display: block;
+	margin: 10px auto 0px auto;
+}
+h1{
+	font-family: Stencil;
+	font-weight: normal;
+	font-size: 42px;
+	letter-spacing: 1px;
+	color: #3D619C;
+	text-shadow: 2px 2px #34CC99;
+}
+h2 {
+	font-weight: bold;
+	font-size: 115%;
+	font-style: italic;
+	color: black;
+}
+h3 {
+	padding-top: 145px;
+	font-size: 150%;
+}
+span {
+	font-size: 75%;
+}
+input {
+	display: block;
+	padding: 7px 50px;
+	border-radius: 25px;
+	background: #34CC99;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	width: 150px;
+}
+input:hover {
+	background: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input#login {
+	display: block;
+}
+input#logout {
+	display: none;
+}
+input.hidden {
+	display: none;
+}
+.topper {
+	float: right;
+	position: fixed;
+	top: 0;
+	background:#E0ECF8;
+	border: 5px solid #34CC99;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 5%;
+	z-index: 11;
+}
+.topper:hover {
+	border: 5px solid #3D619C;
+}
+.pagebody {
+	background-color: white;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	z-index: 0;
+}
+div#title {
+	background-color: #A9D0F5;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border-bottom: 5px solid #3D619C;
+}
+div#navbar {
+	top: 0;
+	left: 0;
+	position: fixed;
+	max-height: 160px;
+	height: 131px;
+	background-color: #34CC99;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 5px solid #3D619C;
+}
+div#navbar:hover > ul li.tab {
+	background-color: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+ul.tabs {
+	font-size: 110%;
+	margin-top: 0px;
+	/* margin-right: 5%; */
+	text-align: center;
+	background-color: #34CC99;
+}
+ul ul {
+	display: none;
+}
+ul li:hover > ul {
+	display: block;
+}
+ul li.tab {
+	float: right;
+	color: white;
+	text-shadow: 1px 1px black;
+	margin-top: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	border-radius: 20px;
+}
+ul li.tab:hover {
+	background-color: #3D619C;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+ul li.item {
+	font-size: 100%;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px black;
+	background-color: #34CC99;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ul li.bott {
+	font-size: 100%;
+	text-align: center;
+	color: #3D619C;
+	background-color: #3D619C;
+	text-shadow: 1px 1px #3D619C;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 40px;
+}
+li.item:hover {
+	background-color: #019966;
+}
+ul.dropdown { 
+	margin-top: 10px;
+	padding-top: 5px;
+	border-radius: 20px;
+}
+
+#home{
+	width: 75px;
+}
+#about {  
+	z-index: 1;
+	width: 175px;
+}
+#about ul.dropdown {
+	z-index: 2;
+	width: 175px;
+}
+#yourjobs {
+	z-index: 3;
+	width: 175px;
+	display: none;
+}
+#yourjobs ul.dropdown {
+	z-index: 4;
+	width: 175px;
+}
+#calender {	
+	z-index: 5;
+	width: 175px;
+	display: none;
+}
+#calender ul.dropdown {
+	z-index: 6;
+	width: 175px;
+}
+#support {
+	z-index: 7;
+	width: 175px;
+}
+#support ul.dropdown {
+	z-index: 8;
+	width: 175px;
+}
+#youraccount { /*ACTIVE*/
+	z-index: 9;
+	width: 175px;
+	display: none;
+	background-color: #019966;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.24), 0 0 0 4px rgba(0,0,0,0.24);
+}
+#youraccount ul.dropdown {
+	z-index: 10;
+	width: 175px;
+}
+#signup {
+	z-index: 9;
+	width: 175px;
+	display: block;
+}
+#signup ul.dropdown {
+	z-index: 10;
+	width: 175px;
+}
+p#space {
+	margin-top: 400px;
+	margin-bottom: 400px;
+	padding: 100px;
+	height: 200px;
+}
