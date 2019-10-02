@@ -148,7 +148,8 @@ ul li:hover > ul {
 }
 ul li.tab {
 	float: right;
-	color: black;
+	color: white;
+	text-shadow: 1px 1px black;
 	margin-top: 3px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -199,21 +200,21 @@ ul.dropdown {
 	z-index: 2;
 	width: 175px;
 }
-#yourjobs {	/*ACTIVE*/
+#yourjobs {
 	z-index: 3;
 	width: 175px;
 	display: none;
-	background-color: #019966;
-	box-shadow: 0 0 0 3px rgba(0,0,0,0.24), 0 0 0 4px rgba(0,0,0,0.24);
 }
 #yourjobs ul.dropdown {
 	z-index: 4;
 	width: 175px;
 }
-#calender {
+#calender {	/*ACTIVE*/
 	z-index: 5;
 	width: 175px;
 	display: none;
+	background-color: #019966;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.24), 0 0 0 4px rgba(0,0,0,0.24);
 }
 #calender ul.dropdown {
 	z-index: 6;

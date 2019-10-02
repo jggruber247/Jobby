@@ -148,7 +148,8 @@ ul li:hover > ul {
 }
 ul li.tab {
 	float: right;
-	color: black;
+	color: white;
+	text-shadow: 1px 1px black;
 	margin-top: 3px;
 	padding-top: 10px;
 	padding-bottom: 10px;

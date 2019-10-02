@@ -1,5 +1,5 @@
 /* AUTHOR: James Garrett Gruber 
-This is the styling sheet for 'MainPage.php'*/
+This is the styling sheet for 'About.php'*/
 html{
 	min-width: 1000px;
 }
@@ -148,7 +148,8 @@ ul li:hover > ul {
 }
 ul li.tab {
 	float: right;
-	color: black;
+		color: white;
+	text-shadow: 1px 1px black;
 	margin-top: 3px;
 	padding-top: 10px;
 	padding-bottom: 10px;
