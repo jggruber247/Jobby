@@ -6,9 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="MainPage.css"> 
 </head>
+
 <?php
 //this block of php code connects to the database
-// note your servername, username, and password should be the same, check your privlidges section in one of the databases to find out
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -61,6 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 <body onLoad = isLoggedIn('<?php print $status; ?>');>
+
+<!-- TOPPER -->
 <div class="topper">
 	<p id="welcome">Welcome back, <?php echo $cow["user_name"]; ?>!</p>
 	<p id="prompt">Please sign in to use Jobby</p>
@@ -71,6 +73,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		<input name="logout" id="logout" type="submit" value="Logout" />
 	</form>
 </div>
+
+<!-- NAVBAR -->
 <div id="navbar">
 	<div id="title">
 		<h1><a href="MainPage.php" title="Return to Home Page">Jobby<span>.com</span></a></h1>
@@ -79,8 +83,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	<ul class="tabs">
 		<li class="tab" id="signup">Sign Up Today!
 			<ul class="dropdown">
-				<li class="item">Create Account</li>
-				<li class="item">Learn More</li>
+				<a href="Login.php#F1"><li class="item">Create Account</li></a>
+				<a href="Login.php#F1"><li class="item">Learn More</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
@@ -102,29 +106,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		</li>
 		<li class="tab" id="calender">Calender
 			<ul class="dropdown">
-				<li class="item">View Calender</li>
-				<li class="item">Import Calender</li>
-				<li class="item">Export Calender</li>
+				<a href="Calend.php#C1"><li class="item">View Calender</li></a>
+				<a href="Calend.php#C2"><li class="item">Import Calender</li></a>
+				<a href="Calend.php#C3"><li class="item">Export Calender</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
 		<li class="tab" id="yourjobs">Your Jobs
 			<ul class="dropdown">
-				<li class="item">New Application</li>
-				<li class="item">Application History</li>
+				<a href="Jobs.php#B1"><li class="item">New Application</li></a>
+				<a href="Jobs.php#B2"><li class="item">Application History</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
 		<li class="tab" id="about">About 
 			<ul class="dropdown">
-				<a href="MainPage.php#A1"><li class="item">What is Jobby?</li></a>
-				<a href="MainPage.php#A2"><li class="item">How does it work?</li></a>
-				<a href="MainPage.php#A3"><li class="item">FAQ</li></a>
+				<a href="About.php#A1"><li class="item">What is Jobby?</li></a>
+				<a href="About.php#A2"><li class="item">How does it work?</li></a>
+				<a href="About.php#A3"><li class="item">FAQ</li></a>
 				<li class="bott">.</li>
 			</ul>
 		</li>
+		<a href="MainPage.php"><li class="tab" id="home">Home</li></a>
 	</ul>
 </div>
+
 <!-- END NAVBAR FORMATTING -->
 <div class="pagebody">
 <h3 id="A1">What is Jobby?</h3>
@@ -134,7 +140,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <h3 id="A3">Frequently Asked Questions</h3>
 <p id="space">[empty]</p>
 </div>
+
 </body>
+
+
 <?php
 $conn->close();
 //ends the connection

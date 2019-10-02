@@ -187,6 +187,10 @@ ul.dropdown {
 	padding-top: 5px;
 	border-radius: 20px;
 }
+
+#home{
+	width: 75px;
+}
 #about {
 	z-index: 1;
 	width: 175px;
@@ -246,6 +250,28 @@ p#space {
 	height: 200px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Old Responsive navbar code */
+/*
 @media only screen and (max-width: 1250px) {
 	ul ul {
 		list-style: none;
@@ -305,3 +331,4 @@ p#space {
 		z-index: 5;
 	}
 }
+*/
