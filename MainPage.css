@@ -1,8 +1,5 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'MainPage.php'*/
-html{
-	min-width: 1300px;
-}
 * {
 	text-decoration: none;
 	padding: 0;
@@ -258,55 +255,62 @@ p#space {
 }
 
 @media only screen and (max-width: 1250px) {
-	#about {
+	div#navbar {
 		
 	}
+	ul.tabs {
+		width: 80%;
+		margin-top: 60px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.tab {
+		width: 175px;
+		margin: 0px;
+	}
+	#about {
+		width: 100%;
+	}
 	#about ul.dropdown {
-		z-index: 9;
+		width: 100%;
 	}
 	#yourjobs {
-		position: fixed;
-		top: 5px;
-		right: 190px;
-		z-index: 10;
+		width: 100%;
 	}
 	#yourjobs ul.dropdown {
-		z-index: 9;
+		width: 100%;
 	}
 	#calender {
-		position: fixed;
-		top: 40px;
-		right: 190px;
-		z-index: 8;
+		width: 100%;
 	}
 	#calender ul.dropdown {
-		z-index: 7;
+		width: 100%;
 	}
 	#support {
-		position: fixed;
-		top: 40px;
-		right: 10px;
-		z-index: 8;
+		width: 100%;
 	}
 	#support ul.dropdown {
-		z-index: 7;
+		width: 100%;
 	}
 	#youraccount {
-		position: fixed;
-		top: 75px;
-		right: 10px;
-		z-index: 6;
+		width: 100%;
 	}
 	#youraccount ul.dropdown {
-		z-index: 5;
+		width: 100%;
 	}
 	#signup {
-		position: fixed;
-		top: 75px;
-		right: 10px;
-		z-index: 6;
+		width: 100%;
 	}
 	#signup ul.dropdown {
-		z-index: 5;
+		width: 100%;
+	}
+	#home {
+		position: fixed;
+		top: 85px;
+		right: 10px;
+		z-index: -2;
+	}
+	.pagebody {
+		margin-top: 100px;
 	}
 }
