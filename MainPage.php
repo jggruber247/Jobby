@@ -135,8 +135,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <div class="pagebody">
 <h3>Welcome back to Jobby!</h3>
 <p id="space">[empty]</p>
-<p id="space">[empty]</p>
-<p id="space">[empty]</p>
+<div>
+
+
+
+
 </div>
 
 </body>

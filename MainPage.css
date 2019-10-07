@@ -257,37 +257,9 @@ p#space {
 	height: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Old Responsive navbar code */
-/*
 @media only screen and (max-width: 1250px) {
-	ul ul {
-		list-style: none;
-	}
 	#about {
-		position: fixed;
-		top: 5px;
-		right: 10px;
-		z-index: 10;
+		
 	}
 	#about ul.dropdown {
 		z-index: 9;
@@ -338,4 +310,3 @@ p#space {
 		z-index: 5;
 	}
 }
-*/
