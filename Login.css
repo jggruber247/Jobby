@@ -31,12 +31,28 @@ h2 {
 h3 {
 	font-size: 150%;
 }
+.label {
+	width: 30%;
+	margin: 0;
+	float: left;
+	height: 100%;
+	padding: 10px;
+	font-size: 120%;
+	font-family: helvetica;
+}
 span {
 	font-size: 75%;
 }
 input{
-	 padding: 7px 70px;
-	 font-size: 120%;
+	padding: 7px;
+	font-size: 120%;
+}
+.fillin {
+	text-align: left;
+	width: 52%;
+	margin: 0;
+	margin-right: 8%;
+	float: right;
 }
 input#sub{
 	 padding: 7px 160px;
@@ -81,4 +97,13 @@ div#navbar {
 	margin-left: 0;
 	margin-right: 0;
 	border-bottom: 5px solid #3D619C;
+}
+div#userp, div#passp {
+	padding: 5px;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 60px;
 }

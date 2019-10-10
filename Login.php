@@ -92,14 +92,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	</div>
 </div>
 <div id="rectangle">
-<!--form that takes you back to home page-->
 	<h3>Please Sign In Below</h3>
 	<br>
 	<!--main form to login-->
 	<form method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-		<input type="text" name="user" placeholder="<?php echo $userErr;?>"> <br><br>
-		<input type="password" name="pass" placeholder="<?php echo $passErr;?>"> <br><br>
-		<br><br>
+		<div id="userp">
+			<h3 class="label" title="e.g. SMD03">User ID</h3>
+			<input class="fillin" type="text" name="user">
+		</div>
+		<br>
+		<div id="passp">
+			<h3 class="label">Password</h3>
+			<input class="fillin" type="password" name="pass">
+		</div>
+		<br>
 		<input id ="sub" type="submit" name="submit" value="Submit">
 	</form>
 	<form  action="MainPage.php">
