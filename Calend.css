@@ -153,6 +153,7 @@ ul li.tab {
 	margin-right: 10px;
 	border-radius: 20px;
 	box-shadow: 0 0 0 3px rgba(0,0,0,0), 0 0 0 4px rgba(0,0,0,0);
+	transition: 0.3s;
 }
 ul li.tab:hover {
 	background-color: #3D619C;

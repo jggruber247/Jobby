@@ -154,6 +154,7 @@ ul li.tab {
 	margin-right: 10px;
 	border-radius: 20px;
 	box-shadow: 0 0 0 3px rgba(0,0,0,0), 0 0 0 4px rgba(0,0,0,0);
+	transition: 0.3s;
 }
 ul li.tab:hover {
 	background-color: #3D619C;
@@ -254,13 +255,10 @@ p#space {
 }
 
 @media only screen and (max-width: 1250px) {
-	div#navbar {
-		
-	}
 	ul.tabs {
 		margin-top: 60px;
-		margin-left: 10%;
-		margin-right: 10%;
+/* 		margin-left: 10%;
+		margin-right: 10%; */
 	}
 	.tab {
 		position: absolute;
@@ -270,6 +268,7 @@ p#space {
 		margin: 0px;
 		text-align: right;
 		padding-right: 10px;
+		border: 1px solid #E0ECF8;
 	}
 	.tab:hover {
 		left: 5px;
@@ -334,7 +333,30 @@ p#space {
 		text-align: center;
 		padding-right: 0;
 	}
-	.pagebody {
-		margin-top: 100px;
+	
+	.topper {
+		top: 5px;
+		left: 5px;
+		border: 5px solid #3D619C;
+		margin-top: 0;
+		margin-left: 0;
 	}
+	div#title {
+		text-align: right;
+	}
+	h1 {
+		padding-right: 45px;
+	}
+	h2 {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.pagebody {
+		overflow: hidden;
+	}
+/* 	@media only screen and (max-width: 800px) {
+		* {
+			font-size: 95%;
+		}
+	} */
 }
