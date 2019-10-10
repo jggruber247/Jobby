@@ -85,22 +85,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	return $data;}
 ?>
 <body>
+<div id="navbar">
+	<div id="title">
+		<h1><a href="MainPage.php" title="Return to Home Page">Jobby<span>.com</span></a></h1>
+		<h2>Organizing your job search since 2019!</h2>
+	</div>
+</div>
 <div id="rectangle">
 <!--form that takes you back to home page-->
-<h1>Welcome Back to Jobby!</h1>
-<h3>Please Sign In Below</h3>
-<br>
-<!--main form to login-->
-<form method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-	<input type="text" name="user" placeholder="<?php echo $userErr;?>"> <br><br>
-	<input type="password" name="pass" placeholder="<?php echo $passErr;?>"> <br><br>
-	<br><br>
-	<input id ="sub" type="submit" name="submit" value="Submit">
-</form>
-<form  action="MainPage.php">
-    <input id="return" type="submit" value="Return to Home Page" />
-</form>
-<h2 id="btmERR"><?php echo $ERR;?></h2>
+	<h3>Please Sign In Below</h3>
+	<br>
+	<!--main form to login-->
+	<form method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+		<input type="text" name="user" placeholder="<?php echo $userErr;?>"> <br><br>
+		<input type="password" name="pass" placeholder="<?php echo $passErr;?>"> <br><br>
+		<br><br>
+		<input id ="sub" type="submit" name="submit" value="Submit">
+	</form>
+	<form  action="MainPage.php">
+		<input id="return" type="submit" value="Return to Home Page" />
+	</form>
+	<h2 id="btmERR"><?php echo $ERR;?></h2>
 </div>
 </body>
 </html>

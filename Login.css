@@ -1,21 +1,38 @@
 /* AUTHOR: James Garrett Gruber 
 This is the styling sheet for 'Login.php'*/
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:-webkit-any-link {
+	color: #3D619C;
+}
 body{
 	text-align: center;
 }
 h1{
-	 margin-top: 20px;
-	 font-family: Helvetica;
-	 font-size: 175%;
+	font-family: Stencil;
+	font-weight: normal;
+	font-size: 42px;
+	letter-spacing: 1px;
+	color: #3D619C;
+	text-shadow: 2px 2px #34CC99;
 }
-h2{
-	 font-size: 150%;
-	 color: red;
-	 font-family: Trebuchet;
+h2 {
+	font-weight: bold;
+	font-size: 115%;
+	font-style: italic;
+	color: black;
 }
-h3{
-	font-family: Helvetica;
+h3 {
 	font-size: 150%;
+}
+span {
+	font-size: 75%;
 }
 input{
 	 padding: 7px 70px;
@@ -39,9 +56,29 @@ input#return:hover{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 div#rectangle{
-	margin-top: 60px;
+	margin-top: 10px;
     width:400px;
     background:#E0ECF8;
 	display: inline-block;
 	border-style: solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div#title {
+	background-color: #A9D0F5;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border-bottom: 5px solid #3D619C;
+}
+div#navbar {
+	height: 105px;
+	background-color: #34CC99;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 5px solid #3D619C;
 }
