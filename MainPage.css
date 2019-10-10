@@ -320,7 +320,6 @@ p#space {
 	#signup {
 		top: 185px;
 		z-index: 4;
-		font-size: 95%;
 	}
 	#signup ul.dropdown {
 		width: 100%;
@@ -335,7 +334,7 @@ p#space {
 		text-align: center;
 		padding-right: 0;
 		border: none;
-		background-color: #34CC99;
+		background-color: #019966;
 	}
 	
 	.topper {

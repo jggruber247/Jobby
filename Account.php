@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		<h2>Organizing your job search since 2019!</h2>
 	</div>
 	<ul class="tabs">
-		<li class="tab" id="signup">Sign Up Today!
+		<li class="tab" id="signup">Sign Up!
 			<ul class="dropdown">
 				<a href="Login.php#F1"><li class="item">Create Account</li></a>
 				<a href="Login.php#F2"><li class="item">Learn More</li></a>
