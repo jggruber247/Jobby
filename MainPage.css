@@ -134,7 +134,6 @@ ul {
 ul.tabs {
 	font-size: 110%;
 	margin-top: 0px;
-	/* margin-right: 5%; */
 	text-align: center;
 	background-color: #34CC99;
 }
@@ -254,11 +253,9 @@ p#space {
 	height: 200px;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1300px) {
 	ul.tabs {
 		margin-top: 60px;
-/* 		margin-left: 10%;
-		margin-right: 10%; */
 	}
 	.tab {
 		position: absolute;
@@ -269,15 +266,18 @@ p#space {
 		text-align: right;
 		padding-right: 10px;
 		border: 1px solid #E0ECF8;
+		background-color: #E0ECF8;
+		color: black;
 	}
 	.tab:hover {
 		left: 5px;
 		text-align: center;
 		padding-right: 0px;
+		color: white;
 	}
 	
 	#about {
-		top: 150px;
+		top: 140px;
 		z-index: 5;
 	}
 	#about ul.dropdown {
@@ -285,7 +285,7 @@ p#space {
 		z-index: 6;
 	}
 	#yourjobs {
-		top: 200px;
+		top: 185px;
 		z-index: 4;
 	}
 	#yourjobs ul.dropdown {
@@ -293,7 +293,7 @@ p#space {
 		z-index: 7;
 	}
 	#support {
-		top: 250px;
+		top: 230px;
 		z-index: 3;
 	}
 	#support ul.dropdown {
@@ -301,7 +301,7 @@ p#space {
 		z-index: 8;
 	}
 	#calender {
-		top: 300px;
+		top: 275px;
 		z-index: 2;
 	}
 	#calender ul.dropdown {
@@ -309,7 +309,7 @@ p#space {
 		z-index: 9;
 	}
 	#youraccount {
-		top: 350px;
+		top: 320px;
 		z-index: 1;
 	}
 	#youraccount ul.dropdown {
@@ -317,7 +317,7 @@ p#space {
 		z-index: 10;
 	}
 	#signup {
-		top: 200px;
+		top: 185px;
 		z-index: 4;
 	}
 	#signup ul.dropdown {
@@ -332,14 +332,19 @@ p#space {
 		z-index: 3;
 		text-align: center;
 		padding-right: 0;
+		border: none;
+		background-color: #019966;
 	}
 	
 	.topper {
 		top: 5px;
 		left: 5px;
-		border: 5px solid #3D619C;
+		border: 2px solid #3D619C;
 		margin-top: 0;
 		margin-left: 0;
+	}
+	.topper:hover {
+		border: 2px solid #3D619C;
 	}
 	div#title {
 		text-align: right;
@@ -351,12 +356,8 @@ p#space {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
+	
 	.pagebody {
 		overflow: hidden;
 	}
-/* 	@media only screen and (max-width: 800px) {
-		* {
-			font-size: 95%;
-		}
-	} */
 }
