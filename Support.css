@@ -252,3 +252,115 @@ p#space {
 	padding: 100px;
 	height: 200px;
 }
+
+@media only screen and (max-width: 1300px) {
+	ul.tabs {
+		margin-top: 60px;
+	}
+	.tab {
+		position: absolute;
+		left: -80px;
+		transition: 0.3s;
+		width: 100px;
+		margin: 0px;
+		text-align: right;
+		padding-right: 10px;
+		border: 1px solid #E0ECF8;
+		background-color: #34CC99;
+		color: black;
+	}
+	.tab:hover {
+		left: 5px;
+		text-align: center;
+		padding-right: 0px;
+		color: white;
+	}
+	
+	#about {
+		top: 140px;
+		z-index: 5;
+	}
+	#about ul.dropdown {
+		width: 100%;
+		z-index: 6;
+	}
+	#yourjobs {
+		top: 185px;
+		z-index: 4;
+	}
+	#yourjobs ul.dropdown {
+		width: 100%;
+		z-index: 7;
+	}
+	#support {
+		top: 230px;
+		z-index: 3;
+		background-color: #019966;
+		border: none;
+	}
+	#support ul.dropdown {
+		width: 100%;
+		z-index: 8;
+	}
+	#calender {
+		top: 275px;
+		z-index: 2;
+	}
+	#calender ul.dropdown {
+		width: 100%;
+		z-index: 9;
+	}
+	#youraccount {
+		top: 320px;
+		z-index: 1;
+	}
+	#youraccount ul.dropdown {
+		width: 100%;
+		z-index: 10;
+	}
+	#signup {
+		top: 185px;
+		z-index: 4;
+		font-size: 95%;
+	}
+	#signup ul.dropdown {
+		width: 100%;
+		z-index: 7;
+	}
+	#home {
+		position: fixed;
+		left: auto;
+		top: 85px;
+		right: 10px;
+		z-index: 3;
+		text-align: center;
+		padding-right: 0;
+		border: none;
+		background-color: #019966;
+	}
+	
+	.topper {
+		top: 5px;
+		left: 5px;
+		border: 2px solid #3D619C;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.topper:hover {
+		border: 2px solid #3D619C;
+	}
+	div#title {
+		text-align: right;
+	}
+	h1 {
+		padding-right: 45px;
+	}
+	h2 {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	
+	.pagebody {
+		overflow: hidden;
+	}
+}

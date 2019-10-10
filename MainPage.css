@@ -253,6 +253,7 @@ p#space {
 	height: 200px;
 }
 
+
 @media only screen and (max-width: 1300px) {
 	ul.tabs {
 		margin-top: 60px;
@@ -266,7 +267,7 @@ p#space {
 		text-align: right;
 		padding-right: 10px;
 		border: 1px solid #E0ECF8;
-		background-color: #E0ECF8;
+		background-color: #34CC99;
 		color: black;
 	}
 	.tab:hover {
@@ -319,6 +320,7 @@ p#space {
 	#signup {
 		top: 185px;
 		z-index: 4;
+		font-size: 95%;
 	}
 	#signup ul.dropdown {
 		width: 100%;
@@ -333,7 +335,7 @@ p#space {
 		text-align: center;
 		padding-right: 0;
 		border: none;
-		background-color: #019966;
+		background-color: #34CC99;
 	}
 	
 	.topper {
