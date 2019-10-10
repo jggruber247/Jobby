@@ -143,7 +143,6 @@ ul ul {
 }
 ul li:hover > ul {
 	display: block;
-	
 }
 ul li.tab {
 	float: right;
@@ -259,56 +258,81 @@ p#space {
 		
 	}
 	ul.tabs {
-		width: 80%;
 		margin-top: 60px;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 	.tab {
-		width: 175px;
+		position: absolute;
+		left: -80px;
+		transition: 0.3s;
+		width: 100px;
 		margin: 0px;
+		text-align: right;
+		padding-right: 10px;
 	}
+	.tab:hover {
+		left: 5px;
+		text-align: center;
+		padding-right: 0px;
+	}
+	
 	#about {
-		width: 100%;
+		top: 150px;
+		z-index: 5;
 	}
 	#about ul.dropdown {
 		width: 100%;
+		z-index: 6;
 	}
 	#yourjobs {
-		width: 100%;
+		top: 200px;
+		z-index: 4;
 	}
 	#yourjobs ul.dropdown {
 		width: 100%;
-	}
-	#calender {
-		width: 100%;
-	}
-	#calender ul.dropdown {
-		width: 100%;
+		z-index: 7;
 	}
 	#support {
-		width: 100%;
+		top: 250px;
+		z-index: 3;
 	}
 	#support ul.dropdown {
 		width: 100%;
+		z-index: 8;
+	}
+	#calender {
+		top: 300px;
+		z-index: 2;
+	}
+	#calender ul.dropdown {
+		width: 100%;
+		z-index: 9;
 	}
 	#youraccount {
-		width: 100%;
+		top: 350px;
+		z-index: 1;
 	}
 	#youraccount ul.dropdown {
 		width: 100%;
+		z-index: 10;
 	}
 	#signup {
-		width: 100%;
+		top: 200px;
+		z-index: 4;
 	}
 	#signup ul.dropdown {
 		width: 100%;
+		z-index: 7;
 	}
 	#home {
 		position: fixed;
+		left: auto;
 		top: 85px;
 		right: 10px;
-		z-index: -2;
+		z-index: 3;
+		text-align: center;
+		padding-right: 0;
 	}
 	.pagebody {
 		margin-top: 100px;
